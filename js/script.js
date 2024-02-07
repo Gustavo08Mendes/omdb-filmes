@@ -22,10 +22,9 @@ async function buscar_filme() {
         p.innerText = movie.imdbID;
         img.className = "img";
         img.src = movie.Poster;
-        console.log(movie);
+        // console.log(movie);
         imgContainer.appendChild(img);
         if (movie.Poster == 'N/A') {
-            //precisa ser revisado para aparecer algo ao inves de sumir a div com dispaly none
             img.src = '';
             img.alt = movie.Title;
             img.classList.add('some');
