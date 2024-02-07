@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    height: 60px;
+    padding: 20px 50px 0 50px;
+}
+
+body {
+    background-color: rgb(19, 19, 19);
+}
+
+main {
+    height: 800px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(82, 82, 82);
+}
+
+.campo-busca {
+    padding-top: 0px;
+}
+
+.campo-busca button,
+.campo-busca input {
+    background-color: #fff;
+    padding: 10px 30px;
+}
+
+.campo-busca label {
+    font-size: 25px;
+}
+
+.logo h1 {
+    cursor: default;
+}
+
+.imagem-conteudo {
+    display: flex;
+    overflow: hidden;
+    width: 100vw;
+    overflow-x: scroll;
+}
+
+::-webkit-scrollbar {
+    height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 50px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+.img {
+    min-width: 300px;
+    min-height: 300px;
+    margin: 10px;
+    cursor: pointer;
+}
+.teste{
+    top: 200px;
+    left: -310px;
+    display: block !important;
+    transition: left 3s;
+    animation: slidein 3s;
+    animation-fill-mode: both;
+}
+.some{
+    background-color: rgb(151, 151, 151);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes slidein {
+    from {
+        left: -310px;
+    }
+
+    to {
+        left: 400px;
+    }
+}
